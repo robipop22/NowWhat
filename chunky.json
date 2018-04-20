@@ -1,0 +1,47 @@
+{
+  "name": "NowWhat",
+  "template": "default",
+  "env": "dev",
+  "id": "com.nowwhat.android",
+  "androidSdkDir": "~/Library/Android/sdk",
+  "sections": {
+    "start": {
+      "stack": [
+        "intro",
+        "actions",
+        "profile"
+      ],
+      "hideHeader": true,
+      "layout": "tabs"
+    }
+  },
+  "transitions": [
+    "replace://start",
+    "replace://actions",
+    "replace://profile"
+  ],
+  "provisioning": {},
+  "theme": {
+    "progressColor": "rgba(50,50,50,0.9)",
+    "primaryColor": "#357bea",
+    "statusBarLight": false,
+    "navigationColor": "#607D8B",
+    "navigationTintColor": "#37474F",
+    "underlineColor": "#666",
+    "backgroundColor": "#FAFAFA",
+    "footerTintColor": "#CFD8DC",
+    "footerHeaderColor": "#90A4AE",
+    "footerColor": "#546E7A",
+    "mailchimp": {
+      "uuid": "",
+      "lid": ""
+    }
+  },
+  "info": {
+    "copyright": "© 2017.",
+    "links": {
+      "privacy": "/",
+      "terms": "/"
+    }
+  }
+}

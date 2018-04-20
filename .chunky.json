@@ -1,0 +1,65 @@
+{
+  "name": "NowWhat",
+  "template": "default",
+  "cloud": {
+    "dev": {
+      "aws": {
+        "key": "",
+        "secret": "",
+        "apiDomain": "",
+        "region": "us-east-1"
+      },
+      "google": {
+        "services": [
+          "drive",
+          "calendar",
+          "spreadsheets"
+        ],
+        "serviceAccount": {
+          "type": "service_account",
+          "project_id": "nowwhat-4fb78",
+          "private_key_id": "c239fdb6641692de7bea566d35121d7f13c100a1",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDTKj9GP9Yo+myJ\neH3Dpc5u4MGeW7zQzrXXyjBxXjslmTnFhRdBkPddgZC/KGCrFign8Z55tmz35Sxm\nl0JQ1hW0qsUGd4sm580jpcn2VCgRIrPUD4FG5kE57fPR7WU+TdXZR58iUa+b4CY7\nP8n4i/33SwuihS8m8sEN3bw+v/Sa0lFPRDz3eActSYHZwzxABh1S0m7hgC/LU5V3\n9dNMDDF/QBKbm064JkUmo1V4kwC+mYB4jw7/+5YxL92a0vpJ7cRIEX0RzlMNv/9m\nVCtDsSrea1n8cUDKKehubOl1xAxCoseSNUdXjxkOgdxhrO/QF1kGKyPkGFJiKqge\nC9BTfQcfAgMBAAECggEAF0NsPR0DRvhvxKVVlZxKpcR1EDEjGA3t0pwfwh2Tfozm\n5G/JJBwIZHDFtYmJPM/wFJZ10wrZ7mV9AsBfOfCb6490rUW2Os8GtoqpOU4EK/8a\nuJ4Mq/bp8KvaVKJGqRqCGLHfQjSlmBKVo6lfYtZpYDkQSxNJIo1T32cyOeeD1xpp\nK0k27AvtHg6HrLXqDVbhbEcbhW4K8whcRdMEBeb0E/juAVkSoMmuHSQyV+8T5RM9\nfzJDUGiNakt72FANRc0kUiZct9RcBS5Fpfs5qWElyxsv8hKGBLMe1JEH4EEKyOJd\nsxaChzOfWhwycZQtpeLU7HwikGQrkq72mz8N9wjzYQKBgQD4bhtCcvvtluPXfgWy\n+zcOjmHN4zW5tU4H3Zz7/qse/ukMYerXFhP1mq00aK5YPC3V+U7oN9SaHqv5mqJ5\nGy8JABL2hZxC1lUsbXucEDa5rRnmWguFM1S5OmVF6+9jVR/ITy72M6uhnkXFt4XQ\nkEVqsHz9+vwXF41wwzl0NCAwDQKBgQDZmXPJHdeJtA0+vNYdyhgko4RZonj3rc1p\n7TMw57mAvW6jtz1yCSt0CdKwur7wIJb5aLVavPPcoJhhPge+Yv56ofXFua8pQ/Vu\njHVK0YRmQ0urnKL/1gw6/HAmisp7eXSUsn6HrvIgS2AX4M45IXOoS7b5pDoETYCp\nu1kNwlyc2wKBgEW+q7qBC4dNSFP0VmdELdXRVVX3BttHMkv1BKCeg64lBIpsZwDR\nevMF5MCE7wVoh7m9z1BUdER8fe2KYzi6z/6n3asGIbOF9s2NQxmyV5rTJSVNfFR9\n77g807fIoCF0AYM778RBB1tNUutKNbAzALoOKFkpgGJ/Qz84H8Ym6C51AoGAXrT3\nPBWM9hYznZa66oRHNcslk42vcL1opi3jFeoFRw8r1H2wdK2hCAQue1UMPZ8xlqQI\nKtIKoYAUUl6ZKDgV4nITcld68U7ux4rCkinWoluv16V5HDihYhr1BRFrR4p5Py7g\n+1UddQjZbgseNqdkm1846DaeObkxwq4T+HUbsfkCgYA4RZ21a9CHw2Qy5NxCCnps\ngndvxJAtYwM2T0AM7iRCX1EKG2wXLs6pzQXly9VPPWPPJcKuDVMhECmPwSxcsmkk\nUTihlX3WvQiHJ/3AGX/e8gZFnTDObpJz+y2Hy0PTwBwb5nBca6llyiT/iluXsoQU\nO1mYWo4Oacyo5ML1aW5j3A==\n-----END PRIVATE KEY-----\n",
+          "client_email": "full-access@nowwhat-4fb78.iam.gserviceaccount.com",
+          "client_id": "102824543552735126741",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://accounts.google.com/o/oauth2/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/full-access%40nowwhat-4fb78.iam.gserviceaccount.com"
+        }
+      }
+    },
+    "staging": {
+      "aws": {
+        "key": "",
+        "secret": "",
+        "apiDomain": "",
+        "region": "us-east-1"
+      },
+      "google": {
+        "services": [
+          "drive",
+          "calendar",
+          "spreadsheets"
+        ],
+        "serviceAccount": {}
+      }
+    },
+    "production": {
+      "aws": {
+        "key": "",
+        "secret": "",
+        "apiDomain": "",
+        "region": "us-east-1"
+      },
+      "google": {
+        "services": [
+          "drive",
+          "calendar",
+          "spreadsheets"
+        ],
+        "serviceAccount": {}
+      }
+    }
+  }
+}

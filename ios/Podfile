@@ -1,0 +1,42 @@
+platform :ios, '9.1'
+
+target 'chunky' do
+  # use_frameworks!
+  
+  # Required by react-native maps
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'React', path: '../node_modules/react-native'
+  pod 'react-native-geo-fencing', path: '../node_modules/react-native-geo-fencing'
+  
+  pod 'GoogleMaps'
+  
+  # Required by RNFirebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/AppIndexing'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Database'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Storage'
+
+  target 'chunkyTests' do
+    inherit! :search_paths
+  end
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'react-native-google-maps'
+            target.build_configurations.each do |config|
+                config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+            end
+        end
+        if target.name == "React"
+            target.remove_from_project
+        end
+    end
+end

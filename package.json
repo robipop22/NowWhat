@@ -1,0 +1,31 @@
+{
+  "name": "NowWhat",
+  "version": "0.1.0",
+  "description": "This is an awesome Chunky product",
+  "scripts": {
+    "test": "react-native-savor test",
+    "lint": "react-native-savor lint",
+    "coverage": "react-native-savor coverage",
+    "codeclimate": "react-native-savor codeclimate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-chunky/react-chunky.git"
+  },
+  "homepage": "https://github.com/react-chunky/react-chunky",
+  "dependencies": {
+    "react": "16.0.0-alpha.6",
+    "react-chunky-auth-chunk": "0.x",
+    "react-chunky-list-chunk": "0.x",
+    "react-dom-chunky": "0.x",
+    "react-native-chunky": "0.x",
+    "react-native-geo-fencing": "^0.1.0",
+    "react-native-google-geometry": "0.0.2",
+    "react-native-maps-directions": "^1.4.0",
+    "react-native-watson": "^1.6.2"
+  },
+  "devDependencies": {
+    "react-native-savor": "0.x",
+    "react-savor": "0.x"
+  }
+}

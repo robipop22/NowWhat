@@ -1,0 +1,27 @@
+{
+  "name": "react-native-geo-fencing",
+  "authors": {
+    "Chin Loong Tan": "chinloong.tan@surialabs.com"
+  },
+  "version": "0.1.0",
+  "summary": "Native modules to determine if a location is within defined geographical boundaries using Google Geometry library",
+  "license": "MIT",
+  "homepage": "https://github.com/surialabs/react-native-geo-fencing",
+  "source": {
+    "git": "https://github.com/surialabs/react-native-geo-fencing.git",
+    "tag": "0.1.0"
+  },
+  "requires_arc": true,
+  "source_files": "ios/*",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "dependencies": {
+    "GoogleMaps": [
+
+    ],
+    "React": [
+
+    ]
+  }
+}

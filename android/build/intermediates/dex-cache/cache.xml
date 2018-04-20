@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_9920b9c2bad071fbae48dfbde456d4a4de0470ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5c1f80f62ccad560edcd6609fc75f385cf7cb45a">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-10.2.6_562166564a92bc2eaaa232f276e0331e45383c9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f83a631abfdb790591a720e0cfb5f41329831c3">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.2.6_2ddabe378800bdcfefcd8c71d4682900a54c7a0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_911543aab80459b680510b8aa3b528a9ef35b097.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_76ed9fac2048b0721303ce93ffb85cb1302c61bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_f8c0f94fde5c8405ef7a95f8633b0fa8e0373f8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_bd73b1e5e60d48fb9b37d8cd4ae0d1f840ee1cb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-youtube/unspecified/jars/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a62cbd1027677c96026b383de62307faa6a4da8f">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_476813db0fcfa2cace95482837ca2092583b4323.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da832806828ba407284c0c4b1d87b8f9ed9f2520">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.2.6_03c1756323fcf3dc839fbc7bca5a4089ec051752.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_1c2dc077dfaf7bd0dadceadaeead12733c854d80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-sound/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e5a296b3a96416721c5215f25846b9ed5127e16">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-sound-unspecified_a4ad5cbece63572ebd1d74b683f75fb49f14c6c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_04ae0e66a2031e2426a4ce35dd45b445e3e0e7a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-vector-icons-unspecified_04c7c5c48a3dbe188b2675cfc4ec71346e0744f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-geocoder/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f52090c69e53ec818bc2768bdf43bfbcf832bfb4">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-geocoder-unspecified_c4e3e7bdfb8549590b50d2e2053f0e4dce079a95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_1b1f08810dd7e85d5c49bf2abbdc2ea467c231c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_19405803fcb7d3c44573e65675b866adc40dfd04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_00f93f40185e7e306352520050b634017ba9092c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_f120e734dc2b4eefeebfd041c3b5a39072259566.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba4defc8cb4ed5b90b8ef71602722cdeebe507cd">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-10.2.6_5f6dca625ee743d9fe692500406e57b66d4c2a3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_7fc80e528d984bf7afa98d2c09ba1ac9695dfec8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.4_f48ec5f37ee21f9d9885065d0b25805d2e8024f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-fs/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840db516470773f32ba2e88d0deb1ce2fc0ec5d6">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-fs-unspecified_73becdceccb8fb5a53975c8cca2773276e3d50d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_4fba1fd8493cb0916a95d2269385532523aceaea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_bd4c2323ec0a3a1767eac43eada6565269cc9592.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efeb573638d6b2c0d30fbf3e60641272600cf3fe">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-image-picker-unspecified_72c5e5cf8eb7e0bae3d7a6dd791bebab90ae1a99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.2_05280499e8f359dab8825cc3650baee97539a29b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_795de9aa00993f067a80012b938e3d0657ce3610.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.10/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6792fb346d4f11b5b9e6c1a5df3a99c140a9e70">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.10_0a0a969d7e3d36648436fe15fc4afdce6b4d605b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_bd03c8af1455e1d3660678b73ddc4e726c2364a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-firebase/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f4f7c9431ab251f041637c64a315d8eba945c6c">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-firebase-unspecified_d2692ef908d13a41ac111fd74ff51d48d7036d25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-image-resizer/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53a2e4832ab7842946e84b23bc755b2416ccc290">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-image-resizer-unspecified_5076af57a6ea2dd984a7d33943ab60ff5c989a96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_2a27f6d0579fa7a022b26f0b212c898d89e08fc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_a7bbbb7c54514085f1fb2010eb1e75332bc5cd9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a534044236cf81b002604643d23e7ca56bd1ee0">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.2.6_a78db647fddecc375cc632ae8d586fe3719a470e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-maps/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc91e62390fc6674c487adcf7ad3688f45fa8b">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-maps-unspecified_cf0a4ed07f8f781bd0baf8ff915bd1f97a1a8448.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_012ff55a7b401be588abc4e19019b7594072edcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7b3eaf755284fb08a6d616a55fbb07dc3917d5e7">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-10.2.6_742c37c444815334c252e0ad3e65aabc1f0f285a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_c8274c6c15da055291339c0cf2e654a1d2772ce5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_bf6f8a5f0ba38751f541cb63b7af68e4bf6c7e0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_1defd2eef26fad57c39762fb66ae624a4c99c2b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_006be4c7bc0a71eb8579b60399c77cf7183b5556.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29bd9a40adebb952fbe97515aac9db5dfbd90d93">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-10.2.6_908c6d7f9bbd818df5bdb9dbe6d6dcd93b572c28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-youtube/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1acf8e6996452402920b325ef177a4f8d02dbfd3">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-youtube-unspecified_e9897170a01756c9dc543e082d9d79b563679da8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_201f18a534564c2e975e10aa8e80969abd453c29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-audio-streaming/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="34a6c053cbad3b6d1b9b5332ab28193ee81ad1ed">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-audio-streaming-unspecified_5330ecda82bcd3ce7798c261098b0acee796513e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3dbaff65d26258306561d545f88d6712ac41dd46">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-10.2.6_facf0db8195ff635c413cc152a8a9a5f2f86dab7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ba6d53176502b2672a5d7d25a0000d1a6e701c">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-10.2.6_541cfc7acc75b1dafadce96e52da4efc3e73d7bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-audio-streaming/unspecified/jars/libs/aacdecoder-android-0.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="62e05ac791b1f49b2681d1fb623a33c1eee6498e">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/aacdecoder-android-0.8_df252d7b38ca313e50066a096d3ac4734f155ef6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Library/Android/sdk/build-tools/25.0.2/renderscript/lib/renderscript-v8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/renderscript-v8_157223a607e45911fd73b03f3aaaa60669e7e0cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-multidex-1.0.1_7d6305b099020fb5b6be8a351fb77c0bb2c4f981.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_3dd8ffa0d3d5da9d0f2c6691c3edf7f7e6741b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_186c14561ba21412f3a4c65de8c541b27babbf95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_4426b5e21a1dfd56cc0e3d479fc8c70082ca36cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ff5114aff3bfb387577ba92a11408dcf0441c24">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-10.2.6_92983dce3bd6c049866c4bac2d4bcbbb11a28e92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/chunky/react-native-blur/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b4623ff9849e4bfdb31174b72c8134ae71684ab">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/chunky-react-native-blur-unspecified_4f51495f56fa0ac751900e4a8a035afc1e2c2834.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.2.6_cb7f4d5a8fd4eb2f1522eaaa76917d80d6f3574f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de24d8023e8da79f30bee46b298f606e5e758432">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-10.2.6_a8d8004022a429371f0fe953079661d12b05af95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/robertpop/Public/NowWhat/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_d993a847f5ec8b3ab80aea480829bb2f57c73eae.jar" />
+    </item>
+
+</items>
