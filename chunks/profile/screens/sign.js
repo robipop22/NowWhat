@@ -12,14 +12,14 @@ import { isIOS } from '../../utils'
 
 import firebase from '../../configs/firebase'
 
-export default class MainProfileScreen extends Screen {
+export default class SignUpScreen extends Screen {
 
 	constructor(props) {
 		super(props)
 		this.state = {
 			email: '',
-			password: '',
-			err: ''
+			password1: '',
+			password2: ''
 		}
 	}
 
@@ -41,33 +41,38 @@ export default class MainProfileScreen extends Screen {
 
 	handleEmail = (email) => {
 		this.setState({
-			email,
-			err: ''
+			email
 		})
 	}
 
-	handlePassword = (password) => {
+	handlePassword1 = (password1) => {
 		this.setState({
-			password,
-			err: ''
+			password1
 		})
 	}
 
-	handleSignIn = () => {
-		const { email, password } = this.state
-		firebase.auth().signInWithEmailAndPassword(email.trim(), password)
-			.then( (data) => {
-				this.transitions.showLoggedin({email})
-			})
-			.catch( (err) => {
-				this.setState({
-					err: err.message
-				})
-			})
+	handlePassword2 = (password2) => {
+		this.setState({
+			password2
+		})
 	}
 
 	handleSignUp = () => {
-		this.transitions.showSignup()
+		const { email, password1, password2 } = this.state
+		if ( password1 !== password2 ) {
+			this.setState({
+				showPasswordError: true
+			})
+			return;
+		}
+		firebase.auth().createUserWithEmailAndPassword(email, password1)
+			.then( (data) => {
+				console.log(data);
+				this.transitions.showLoggedin({ email })
+			})
+			.catch ( (err) => {
+
+			})
 	}
 
 	render() {
@@ -82,31 +87,26 @@ export default class MainProfileScreen extends Screen {
 
 		return (
 			<View style={styles.container}>
+				<Text style={styles.header}> Sign up </Text>
 				<FormLabel>Email</FormLabel>
 				<FormInput onChangeText={this.handleEmail} keyboardType="email-address"/>
 				<FormLabel>Password</FormLabel>
-				<FormInput onChangeText={this.handlePassword} secureTextEntry={true} />
+				<FormInput onChangeText={this.handlePassword1} secureTextEntry={true} />
+				<FormLabel>Confirm password</FormLabel>
+				<FormInput onChangeText={this.handlePassword2} secureTextEntry={true} />
 				{
-					this.state.err !== '' ?
-						<Text style={styles.err}>{this.state.err}</Text>
-						:
-						null
+					this.state.showPasswordError ?
+						<Text style={styles.err}>Passwords must match!</Text>
+					:
+					null
 				}
-				<Button
-					raised
-					buttonStyle={styles.btn}
-					icon={{ name: 'sign-in', type: 'font-awesome' }}
-					title='Sign in'
-					onPress={this.handleSignIn}
-					/>
-				<Text style={{textAlign: 'center'}}> Don't have an account ? </Text>
 				<Button
 					raised
 					buttonStyle={styles.btn}
 					icon={{ name: 'person-add' }}
 					title='Sign up'
 					onPress={this.handleSignUp}
-					/>
+				/>
 			</View>
 		)
 	}
@@ -119,6 +119,13 @@ const styles = StyleSheet.create({
 	},
 	btn: {
 		margin: 10
+	},
+	header: {
+		fontSize: 30,
+		fontWeight: 'bold',
+		textAlign: 'center',
+		marginTop: 15,
+		marginBottom: 15
 	},
 	err: {
 		color: 'red',

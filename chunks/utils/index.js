@@ -7,3 +7,21 @@ export const isIOS = () => {
 	return Platform.OS === 'ios';
 }
 
+export const updateArrayOfObjects = (updateArray, keyToCompare, valueToCompare, keyToUpdate, valueToUpdate) => {
+  /*
+      @param updateArray - Array to update, the initial array which will be updated
+      @param keyToCompare - key which you want to compare for the update
+      @param valueToCompare - value which you want to compare for the update
+      @param keyToUpdate - the key which you want to update
+      @param valueToUpdate Boolean Value - the value which you want to update
+      the function will return a new updated array
+  */
+	return updateArray.map((objItem) => {
+		if (objItem[ keyToCompare ] === valueToCompare) {
+			objItem[ keyToUpdate ] = valueToUpdate;
+		} else {
+			objItem[ keyToUpdate ] = !valueToUpdate;
+		}
+		return objItem;
+	});
+};

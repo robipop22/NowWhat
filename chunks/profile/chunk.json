@@ -20,6 +20,13 @@
 				"actionTitle": "welcomeActionTitle",
 				"action": "subscribe"
 			}
+		},
+		"loggedin": {
+			"title": "Logged in"
+		},
+		"signup": {
+			"title": "Sign up"
 		}
-	}
+	},
+	"transitions": ["replace://loggedin", "push://signup"]
 }
