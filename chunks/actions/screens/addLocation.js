@@ -11,6 +11,8 @@ import {
 } from 'react-native'
 import { Screen } from 'react-native-chunky'
 
+import { Data } from 'react-chunky'
+
 import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements'
 
 import MapView from 'react-native-maps'
@@ -81,6 +83,13 @@ export default class AddLocationScreen extends Screen {
 		})
 	}
 
+	addRadius = (radius) => {
+		markers[0].radius = radius
+		this.setState({
+			radius
+		})
+	}
+
 	addNewLocation = () => {
 		const data = markers[0]
 		data.latlng = { latitude: this.state.markerLatitude, longitude: this.state.markerLongitude}
@@ -88,10 +97,9 @@ export default class AddLocationScreen extends Screen {
 		const placesRef = firebase.database().ref().child('places')
 		placesRef.push(data)
 		.then( (data) => {
-			console.log('success', data)
 			Alert.alert(
 				'Success!',
-				'The place have been saved',
+				'The place has been saved',
 				[
 					{ text: 'Ok', onPress: () => this.props.navigation.goBack() },
 				],
@@ -99,8 +107,40 @@ export default class AddLocationScreen extends Screen {
 
 		})
 		.catch( (data) => {
-			console.log('err', data)
+			console.warn('err', data)
 		})
+	}
+
+	addNewAlert = () =>{
+		const data = markers[0]
+		Data.Cache.retrieveCachedItem('userData')
+			.then((userData) => {
+				data.userData = userData
+				const alertsRef = firebase.database().ref().child('alerts')
+				alertsRef.push(data)
+					.then( data => {
+						Alert.alert(
+							'Success!',
+							'The alert has been saved', [{
+								text: 'Ok',
+								onPress: () => this.props.navigation.goBack()
+							}, ],
+						)
+					})
+					.catch( data => {
+						console.warn('err', data)
+					})
+			})
+			.catch(() => {
+				Alert.alert(
+					'Warning!',
+					'You are not logged in.'
+				)
+			})
+	}
+
+	cancelSubmit = () => {
+		this.setState({showInputs: false})
 	}
 
 	render() {
@@ -121,7 +161,7 @@ export default class AddLocationScreen extends Screen {
 					icon={{ name: 'arrow-back' }}
 					title='Go back to actions'
 					onPress={() => this.props.navigation.goBack()} />
-				<View style={[styles.mapContainer]}>
+				<View style={[styles.mapContainer, {height: this.state.showInputs ? height * 0.35 : height}]}>
 					<MapView
 						style={styles.map}
 						region={{
@@ -144,20 +184,44 @@ export default class AddLocationScreen extends Screen {
 				</View>
 				{
 					this.state.showInputs ?
-						<View style={styles.inputContainer}>
-							<FormLabel>Title of the location</FormLabel>
-							<FormInput onChangeText={(text) => this.addTitle(text)} />
-							<FormLabel>Description of the location</FormLabel>
-							<FormInput onChangeText={(text) => this.addDescription(text)} />
-							<Button
-								containerViewStyle={styles.buttonContainer}
-								raised
-								icon={{ name: 'check' }}
-								title='Submit'
-								onPress={this.addNewLocation} />
-						</View>
-					:
-						null
+						this.state.alert ?
+							<View style={styles.inputContainer}>
+								<FormLabel>Add the radius of the alert (in meters):</FormLabel>
+								<FormInput type='number' onChangeText={(text) => this.addRadius(text)} />
+								<Button
+									containerViewStyle={styles.buttonContainer}
+									raised
+									icon={{ name: 'check' }}
+									title='Submit'
+									onPress={this.addNewAlert} />
+								<Button
+									containerViewStyle={styles.buttonContainer}
+									raised
+									icon={{ name: 'cancel' }}
+									title='Cancel'
+									onPress={this.cancelSubmit} />
+							</View>
+							:
+								<View style={styles.inputContainer}>
+									<FormLabel>Title of the location</FormLabel>
+									<FormInput onChangeText={(text) => this.addTitle(text)} />
+									<FormLabel>Description of the location</FormLabel>
+									<FormInput onChangeText={(text) => this.addDescription(text)} />
+									<Button
+										containerViewStyle={styles.buttonContainer}
+										raised
+										icon={{ name: 'check' }}
+										title='Submit'
+										onPress={this.addNewLocation} />
+									<Button
+										containerViewStyle={styles.buttonContainer}
+										raised
+										icon={{ name: 'cancel' }}
+										title='Cancel'
+										onPress={this.cancelSubmit} />
+								</View>
+						:
+							null
 				}
 			</KeyboardAvoidingView>
 		)
@@ -170,15 +234,15 @@ const styles = StyleSheet.create({
 		height: height
 	},
 	buttonContainer: {
-		margin: 20
+		margin: 20,
+		backgroundColor: '#2196F3'
 	},
 	mapContainer: {
 		marginTop: 70,
 		...StyleSheet.absoluteFillObject,
 		width: width,
 		justifyContent: 'flex-end',
-		alignItems: 'center',
-		height: 0.35 * height
+		alignItems: 'center'
 	},
 	map: {
 		...StyleSheet.absoluteFillObject

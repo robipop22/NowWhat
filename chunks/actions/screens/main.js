@@ -107,7 +107,7 @@ export default class MainActionsScreen extends Screen {
 				<Button
 				buttonStyle={styles.btn}
 				icon={{ name: 'add-alert' }}
-				title='Add new location'
+				title='Add new alert'
 				onPress={this.addNewAlert}/>
 				<Button
 					buttonStyle={styles.btn}

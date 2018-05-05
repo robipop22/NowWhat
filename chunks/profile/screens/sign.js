@@ -6,6 +6,8 @@ import {
 } from 'react-native'
 import { Screen } from 'react-native-chunky'
 
+import { Data } from 'react-chunky'
+
 import { FormLabel, FormInput, FormValidationMessage, Button } from 'react-native-elements'
 
 import { isIOS } from '../../utils'
@@ -67,8 +69,18 @@ export default class SignUpScreen extends Screen {
 		}
 		firebase.auth().createUserWithEmailAndPassword(email, password1)
 			.then( (data) => {
-				console.log(data);
-				this.transitions.showLoggedin({ email })
+				const { email, uid } = data
+				const dataToStore = {
+					email,
+					uid
+				}
+				Data.Cache.cacheItem('userData', dataToStore)
+					.then( userData => {
+						this.transitions.showLoggedin({userData})
+					})
+					.catch( (err) => {
+						console.warn('Something went wrong', err)
+					})
 			})
 			.catch ( (err) => {
 
