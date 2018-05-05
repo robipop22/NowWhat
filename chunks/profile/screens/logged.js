@@ -6,6 +6,8 @@ import {
 } from 'react-native'
 import { Screen } from 'react-native-chunky'
 
+import { Data } from 'react-chunky'
+
 import { FormLabel, FormInput, FormValidationMessage, Button } from 'react-native-elements'
 
 import { isIOS, updateArrayOfObjects } from '../../utils'
@@ -37,9 +39,18 @@ export default class LoggedInProfileScreen extends Screen {
 
 	constructor(props) {
 		super(props)
-		const { email } = this.props.navigation.state.params
+		let { userData } = this.props.navigation.state.params
+		if ( !userData ) {
+			Data.Cache.retrieveCachedItem('userData')
+				.then((data) => {
+					userData = data
+				})
+				.catch(() => {
+					return
+				})
+		}
 		this.state = {
-			email,
+			userData,
 			modal: false
 		}
 	}
@@ -63,7 +74,13 @@ export default class LoggedInProfileScreen extends Screen {
 	handleLogOut = () => {
 		firebase.auth().signOut()
 			.then( () => {
-				this.props.navigation.goBack(null)
+				Data.Cache.clearCachedItem('mustLog')
+					.then( () => {
+						this.props.navigation.goBack(null)
+					})
+					.catch( () => {
+						console.warn('Something went wrong')
+					})
 			})
 			.catch( (err) => {
 				// handle error
@@ -74,8 +91,8 @@ export default class LoggedInProfileScreen extends Screen {
 		this.setState({ modal: visible })
 	}
 
-	handleFilterSelect = (selectedFilter) => {
-		this.filterList = updateArrayOfObjects(this.filterList, 'name', selectedFilter, 'selected', false);
+	handleFilterSelect = (selectecdFilter) => {
+		this.filterList = updateArrayOfObjects(this.filterList, 'name', selectecdFilter, 'selected', false);
 		this.showFilters(false)
 	}
 
@@ -90,10 +107,12 @@ export default class LoggedInProfileScreen extends Screen {
 
 	renderContent() {
 
+		const { email } = this.state.userData
+
 		return (
 			<View style={styles.container}>
 				<Text style={{textAlign: 'center', fontSize: 20}}> Welcome back!</Text>
-				<Text style={{paddingLeft: 20}}> Email: {this.state.email} </Text>
+				<Text style={{paddingLeft: 20}}> Email: {email} </Text>
 				<Button
 					raised
 					buttonStyle={styles.btn}

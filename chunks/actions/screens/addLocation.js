@@ -28,10 +28,13 @@ export default class AddLocationScreen extends Screen {
 
 	constructor(props) {
 		super(props)
+		const { data, alert } = this.props.navigation.state.params
 		this.state = {
 			showInputs: false,
 			title: '',
-			description: ''
+			description: '',
+			data,
+			alert
 		}
 	}
 

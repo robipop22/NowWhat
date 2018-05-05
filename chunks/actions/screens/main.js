@@ -2,9 +2,13 @@ import React from 'react'
 import {
 	StyleSheet,
 	View,
-	Text
+	Text,
+	Alert
 } from 'react-native'
+
 import { Screen } from 'react-native-chunky'
+
+import { Data } from 'react-chunky'
 
 import { Button } from 'react-native-elements'
 
@@ -39,7 +43,29 @@ export default class MainActionsScreen extends Screen {
 	}
 
 	addNewLocation = () => {
-		this.transitions.showAddlocation()
+		Data.Cache.retrieveCachedItem('userData')
+			.then((data) => {
+				this.transitions.showAddlocation({alert: false, data})
+			})
+			.catch( () => {
+				 Alert.alert(
+				 	'Warning!',
+				 	'In order to submit a new location you must log in.'
+				 )
+			})
+	}
+
+	addNewAlert = () => {
+		Data.Cache.retrieveCachedItem('userData')
+			.then((data) => {
+				this.transitions.showAddlocation({alert: true, data})
+			})
+			.catch(() => {
+				Alert.alert(
+					'Warning!',
+					'In order to submit a new location you must log in.'
+				)
+			})
 	}
 
 	saySomething = () => {
@@ -70,23 +96,31 @@ export default class MainActionsScreen extends Screen {
 	renderContent() {
 		return (
 			<View style={styles.container}>
+				<Text style={{fontSize: 20, marginBottom: 15, padding: 10}}>
+					This is your actions screen you can submit a new location or add an alert.
+				</Text>
 				<Button
-					raised
+					buttonStyle={styles.btn}
 					icon={{ name: 'add-location' }}
 					title='Add new location'
 					onPress={this.addNewLocation}/>
 				<Button
-					raised
+				buttonStyle={styles.btn}
+				icon={{ name: 'add-alert' }}
+				title='Add new location'
+				onPress={this.addNewAlert}/>
+				<Button
+					buttonStyle={styles.btn}
 					icon={{ name: 'sound', type: 'foundation' }}
 					title='Say something'
 					onPress={this.saySomething} />
 				<Button
-					raised
+					buttonStyle={styles.btn}
 					icon={{ name: 'microphone', type: 'material-community' }}
 					title='Start listening'
 					onPress={this.startListening} />
 				<Button
-					raised
+					buttonStyle={styles.btn}
 					icon={{ name: 'microphone-off', type: 'material-community' }}
 					title='Stop listening'
 					onPress={this.startListening} />
@@ -100,5 +134,9 @@ const styles = StyleSheet.create({
 	container: {
 		margin: 20,
 		paddingTop: 20
+	},
+	btn: {
+		margin: 20,
+		backgroundColor: '#2196F3'
 	}
 })
