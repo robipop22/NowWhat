@@ -100,12 +100,6 @@ export default class AlertsScreen extends Screen {
 					})
 			}
 		}
-
-		this.setState({
-			showInputs: true,
-			markerLatitude: coordinate.latitude,
-			markerLongitude: coordinate.longitude
-		})
 	}
 
 	getAlerts = () => {
@@ -150,7 +144,10 @@ export default class AlertsScreen extends Screen {
 	}
 
 	cancelSubmit = () => {
-		this.setState({showInputs: false})
+		this.setState({
+			showInputs: false,
+			alertToDelete: null
+		})
 	}
 
 
@@ -214,9 +211,11 @@ export default class AlertsScreen extends Screen {
 						onPress={(e) => this.handlePolygonPress(e.nativeEvent) }
 					>
 					{
-						polygonCoordinates.map(polygon => (
+						polygonCoordinates.map( (polygon, index) => (
 							<MapView.Polygon
 								coordinates={polygon.coord}
+								strokeColor={this.state.alertToDelete === index ? 'red' : '#000'}
+								strokeWidth={this.state.alertToDelete === index ? 2 : 1}
 							/>
 						))
 					}

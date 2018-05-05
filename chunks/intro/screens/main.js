@@ -241,14 +241,16 @@ export default class MainIntroScreen extends Screen {
             :
               null
           }
-            {markers.map(marker => (
-              <MapView.Marker
-                coordinate={marker.latlng}
-                title={marker.title}
-                description={marker.description}
-                onPress={() => this.handlePressMarker(marker)}
-              />
-            ))}
+            {
+              markers.map(marker => (
+                <MapView.Marker
+                  coordinate={marker.latlng}
+                  title={marker.title}
+                  description={marker.description}
+                  onPress={() => this.handlePressMarker(marker)}
+                />
+              ))
+            }
           </MapView>
         </View>
         {
