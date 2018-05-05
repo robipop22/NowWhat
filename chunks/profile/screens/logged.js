@@ -111,17 +111,15 @@ export default class LoggedInProfileScreen extends Screen {
 
 		return (
 			<View style={styles.container}>
-				<Text style={{textAlign: 'center', fontSize: 20}}> Welcome back!</Text>
+				<Text style={{textAlign: 'center', fontSize: 20, margin: 15}}> Welcome back!</Text>
 				<Text style={{paddingLeft: 20}}> Email: {email} </Text>
 				<Button
-					raised
 					buttonStyle={styles.btn}
 					icon={{ name: 'filter-variant', type: 'material-community' }}
 					title='Your filters'
 					onPress={() => this.showFilters(true)}
 				/>
 				<Button
-					raised
 					buttonStyle={styles.btn}
 					icon={{ name: 'logout', type: 'material-community' }}
 					title='Logout'
@@ -146,6 +144,7 @@ const styles = StyleSheet.create({
 		marginTop: isIOS() ? 50 : 30
 	},
 	btn: {
-		margin: 10
+		margin: 20,
+		backgroundColor: '#0288D1'
 	}
 })

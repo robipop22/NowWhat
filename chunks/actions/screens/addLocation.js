@@ -156,8 +156,10 @@ export default class AddLocationScreen extends Screen {
 		return (
 			<KeyboardAvoidingView style={styles.container}>
 				<Button
-					containerViewStyle={styles.buttonContainer}
-					raised
+					containerViewStyle={[styles.buttonContainer, {marginTop: 30, marginBottom: 20 }]}
+					buttonStyle={{
+						backgroundColor: '#2196F3'
+					}}
 					icon={{ name: 'arrow-back' }}
 					title='Go back to actions'
 					onPress={() => this.props.navigation.goBack()} />
@@ -209,12 +211,18 @@ export default class AddLocationScreen extends Screen {
 									<FormInput onChangeText={(text) => this.addDescription(text)} />
 									<Button
 										containerViewStyle={styles.buttonContainer}
+										buttonStyle={{
+											backgroundColor: '#2196F3'
+										}}
 										raised
 										icon={{ name: 'check' }}
 										title='Submit'
 										onPress={this.addNewLocation} />
 									<Button
 										containerViewStyle={styles.buttonContainer}
+										buttonStyle={{
+											backgroundColor: '#2196F3'
+										}}
 										raised
 										icon={{ name: 'cancel' }}
 										title='Cancel'
@@ -234,8 +242,7 @@ const styles = StyleSheet.create({
 		height: height
 	},
 	buttonContainer: {
-		margin: 20,
-		backgroundColor: '#2196F3'
+		margin: 20
 	},
 	mapContainer: {
 		marginTop: 70,
