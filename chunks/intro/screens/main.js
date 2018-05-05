@@ -9,6 +9,8 @@ import {
 } from 'react-native'
 import { Screen } from 'react-native-chunky'
 
+import { Data } from 'react-chunky'
+
 import { Button } from 'react-native-elements'
 
 import firebase from '../../configs/firebase'
@@ -23,6 +25,8 @@ import { TextToSpeech } from 'react-native-watson'
 
 import GeoFencing from 'react-native-geo-fencing'
 
+const circleToPolygon = require('circle-to-polygon')
+
 const ASPECT_RATIO = width / height
 const LATITUDE = 37.78825
 const LONGITUDE = -122.4324
@@ -30,6 +34,7 @@ const LATITUDE_DELTA = 0.0922
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO
 const IOSMargin = isIOS() ? 50 : 20
 const markers = []
+const alerts = []
 
 export default class MainIntroScreen extends Screen {
 
@@ -83,10 +88,33 @@ export default class MainIntroScreen extends Screen {
       for (let key in data) {
         markers.push(data[ key ])
       }
-      self.setState({
-        isLoading: false
-      })
+      self.getAlerts()
     })
+  }
+
+  getAlerts = () => {
+    const self = this
+    let data
+    Data.Cache.retrieveCachedItem('userData')
+    .then((userData) => {
+        firebase.database().ref('/alerts/').on('value', function (snapshot) {
+          data = snapshot.val()
+          const { email, uid } = userData
+          for (let key in data) {
+            if(data[key].userData.email === email && data[key].userData.uid === uid) {
+              alerts.push(data[key])
+            }
+          }
+          self.setState({
+            isLoading: false
+          })
+        })
+      })
+      .catch(() => {
+        self.setState({
+          isLoading: false
+        })
+      })
   }
 
   handlePressMarker = (marker) => {
@@ -145,22 +173,38 @@ export default class MainIntroScreen extends Screen {
   }
 
   renderContent() {
-    const polygon = [
-      { lat: 46.757726, lng: 23.595431 },
-      { lat: 46.757426, lng: 23.597352 },
-      { lat: 46.756028, lng: 23.595627 },
-      { lat: 46.757082, lng: 23.594285 },
-      { lat: 46.757726, lng: 23.595431 } // last point has to be same as first point
-    ]
+    const polygon = []
+    for ( let i = 0; i < alerts.length; i++ ) {
+      let alertCoordinates = [
+        alerts[i].coordinate.latitude,
+        alerts[i].coordinate.longitude
+      ]
+      const { radius } = alerts[i]
+       polygon.push(circleToPolygon(alertCoordinates,radius, 32 ))
+    }
 
     let point = {
       lat: this.state.latitude !== null ? this.state.latitude : 46.769350,
       lng: this.state.longitude !== null ? this.state.longitude : 23.589462
     }
 
-    GeoFencing.containsLocation(point, polygon)
-      .then(() => TextToSpeech.synthesize('you are in the zone'))
-      .catch(() => TextToSpeech.synthesize('you are not in the zone'))
+    if ( polygon.length ) {
+      for (let i = 0; i < polygon.length; i++) {
+        const geoFenceArray = []
+        for (let j = 0; j < polygon[i].coordinates[0].length; j++) {
+          geoFenceArray.push(
+            {
+              lat: polygon[i].coordinates[0][j][0],
+              lng: polygon[i].coordinates[0][j][1]
+            }
+          )
+        }
+        
+        GeoFencing.containsLocation(point, geoFenceArray)
+          .then(() => TextToSpeech.synthesize('you are in the zone'))
+          .catch(() => TextToSpeech.synthesize('you are not in the zone'))
+      }
+    }
 
     if (this.state.isLoading) {
       return (

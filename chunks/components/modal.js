@@ -70,6 +70,6 @@ const style = StyleSheet.create({
 	cancelBtn: {
 		marginTop: 20,
 		marginBottom: 20,
-		backgroundColor: 'red'
+		backgroundColor: '#01579B'
 	}
 })
