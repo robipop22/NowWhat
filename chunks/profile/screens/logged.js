@@ -96,6 +96,10 @@ export default class LoggedInProfileScreen extends Screen {
 		this.showFilters(false)
 	}
 
+	showAlerts = () => {
+		this.transitions.showAlerts()
+	}
+
 
 	render() {
 		return (
@@ -118,6 +122,12 @@ export default class LoggedInProfileScreen extends Screen {
 					icon={{ name: 'filter-variant', type: 'material-community' }}
 					title='Your filters'
 					onPress={() => this.showFilters(true)}
+				/>
+				<Button
+					buttonStyle={styles.btn}
+					icon={{ name: 'alert', type: 'material-community' }}
+					title='Your alerts'
+					onPress={this.showAlerts}
 				/>
 				<Button
 					buttonStyle={styles.btn}

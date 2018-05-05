@@ -101,7 +101,7 @@ export default class MainIntroScreen extends Screen {
           data = snapshot.val()
           const { email, uid } = userData
           for (let key in data) {
-            if(data[key].userData.email === email && data[key].userData.uid === uid) {
+            if (data[key].userData && data[key].userData.email === email && data[key].userData.uid === uid) {
               alerts.push(data[key])
             }
           }

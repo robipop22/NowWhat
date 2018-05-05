@@ -140,6 +140,7 @@ export default class AddLocationScreen extends Screen {
 	}
 
 	cancelSubmit = () => {
+		markers = []
 		this.setState({showInputs: false})
 	}
 
