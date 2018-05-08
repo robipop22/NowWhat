@@ -74,9 +74,9 @@ export default class LoggedInProfileScreen extends Screen {
 	handleLogOut = () => {
 		firebase.auth().signOut()
 			.then( () => {
-				Data.Cache.clearCachedItem('mustLog')
+				Data.Cache.clearCachedItem('userData')
 					.then( () => {
-						this.props.navigation.goBack(null)
+						this.props.navigation.goBack()
 					})
 					.catch( () => {
 						console.warn('Something went wrong')

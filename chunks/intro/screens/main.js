@@ -263,12 +263,12 @@ export default class MainIntroScreen extends Screen {
                 source={{ uri: pictureURL }}
               />
               <Button
-                raised
+                buttonStyle={[styles.btn, {marginBottom: 0}]}
                 icon={{ name: 'directions-walk' }}
                 title='Show route'
                 onPress={this.showRoute} />
               <Button
-                raised
+                buttonStyle={styles.btn}
                 icon={{ name: 'close' }}
                 title='Close details'
                 onPress={this.closeDetails} />
@@ -298,11 +298,16 @@ const styles = StyleSheet.create({
   detailsContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 0.32 * height + IOSMargin,
+    marginTop: 0.34 * height + IOSMargin,
     height: 0.5 * height
   },
   detailsText: {
     color: '#0c0c0c',
     marginTop: 10,
+  },
+  btn: {
+    margin: 10,
+    backgroundColor: '#00ACC1',
+    width: 200
   }
 })

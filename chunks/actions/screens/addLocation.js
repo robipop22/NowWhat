@@ -194,12 +194,18 @@ export default class AddLocationScreen extends Screen {
 								<Button
 									containerViewStyle={styles.buttonContainer}
 									raised
+									buttonStyle={{
+										backgroundColor: '#2196F3'
+									}}
 									icon={{ name: 'check' }}
 									title='Submit'
 									onPress={this.addNewAlert} />
 								<Button
 									containerViewStyle={styles.buttonContainer}
 									raised
+									buttonStyle={{
+										backgroundColor: '#2196F3'
+									}}
 									icon={{ name: 'cancel' }}
 									title='Cancel'
 									onPress={this.cancelSubmit} />
