@@ -3,7 +3,9 @@ package com.nowwhat.android;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.varenslab.google.geometry.RNGoogleGeometryPackage;
+import com.airbnb.android.react.maps.MapsPackage;
+import com.surialabs.rn.geofencing.GeoFencingPackage;
+// import com.varenslab.google.geometry.RNGoogleGeometryPackage;
 import com.reactlibrary.RNBluemixPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.rnfs.RNFSPackage;
@@ -11,7 +13,6 @@ import fr.bamlab.rnimageresizer.ImageResizerPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.audioStreaming.ReactNativeAudioStreamingPackage;
 import com.zmxv.RNSound.RNSoundPackage;
-import com.airbnb.android.react.maps.MapsPackage;
 import com.cmcewen.blurview.BlurViewPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
@@ -37,7 +38,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNGoogleGeometryPackage(),
+            new MapsPackage(),
+            new GeoFencingPackage(),
+            // new RNGoogleGeometryPackage(),
             new RNBluemixPackage(),
             new ReactNativeYouTube(),
             new RNFSPackage(),
@@ -45,7 +48,6 @@ public class MainApplication extends Application implements ReactApplication {
             new ImagePickerPackage(),
             new ReactNativeAudioStreamingPackage(),
             new RNSoundPackage(),
-            new MapsPackage(),
             new RNGeocoderPackage(),
             new BlurViewPackage(),
             new RNFirebasePackage(),

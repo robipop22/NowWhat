@@ -113,7 +113,6 @@ export default class MainProfileScreen extends Screen {
 						null
 				}
 				<Button
-					raised
 					buttonStyle={styles.btn}
 					icon={{ name: 'sign-in', type: 'font-awesome' }}
 					title='Sign in'
@@ -121,7 +120,6 @@ export default class MainProfileScreen extends Screen {
 					/>
 				<Text style={{textAlign: 'center'}}> Don't have an account ? </Text>
 				<Button
-					raised
 					buttonStyle={styles.btn}
 					icon={{ name: 'person-add' }}
 					title='Sign up'
@@ -135,10 +133,11 @@ export default class MainProfileScreen extends Screen {
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: isIOS() ? 20 : 0
+		marginTop: isIOS() ? 25 : 0
 	},
 	btn: {
-		margin: 10
+		margin: 10,
+		backgroundColor: '#0277BD'
 	},
 	err: {
 		color: 'red',

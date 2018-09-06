@@ -117,6 +117,7 @@ export default class SignUpScreen extends Screen {
 					buttonStyle={styles.btn}
 					icon={{ name: 'person-add' }}
 					title='Sign up'
+					backgroundColor={'#0277BD'}
 					onPress={this.handleSignUp}
 				/>
 			</View>
