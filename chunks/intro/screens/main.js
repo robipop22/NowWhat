@@ -22,6 +22,7 @@ import { decode, isIOS } from '../../utils'
 const { width, height } = Dimensions.get('window')
 
 import { TextToSpeech } from 'react-native-watson'
+import Tts from 'react-native-tts'
 
 import GeoFencing from 'react-native-geo-fencing'
 
@@ -52,7 +53,7 @@ export default class MainIntroScreen extends Screen {
 
   componentDidMount() {
     super.componentDidMount()
-    TextToSpeech.initialize('472574a2-75cf-42ac-a43e-ef73f95ffff7', 'aUtumEFkENdd')
+    if (isIOS()) TextToSpeech.initialize('472574a2-75cf-42ac-a43e-ef73f95ffff7', 'aUtumEFkENdd')
     navigator.geolocation.getCurrentPosition(
       (position) => {
         this.setState({
@@ -201,8 +202,8 @@ export default class MainIntroScreen extends Screen {
         }
         
         GeoFencing.containsLocation(point, geoFenceArray)
-          .then(() => TextToSpeech.synthesize('you are in the zone'))
-          .catch(() => TextToSpeech.synthesize('you are not in the zone'))
+          .then(() => isIOS() ? TextToSpeech.synthesize('you are in the zone') : Tts.speak('you are in the zone'))
+          .catch(() => isIOS() ? TextToSpeech.synthesize('you are not in the zone') : Tts.speak('you are not in the zone'))
       }
     }
 

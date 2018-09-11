@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/multigeometry_placemarks.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/multigeometry_placemarks.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/unsupported.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/unsupported.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/multiple_placemarks.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/multiple_placemarks.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/ballon_gx_prefix.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/ballon_gx_prefix.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/ground_overlay.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/ground_overlay.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/ground_overlay_color.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/ground_overlay_color.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/basic_folder.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/basic_folder.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/extended_data.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/extended_data.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/default_balloon.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/default_balloon.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/inline_style.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/inline_style.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/basic_placemark.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/basic_placemark.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/cdata.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/cdata.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/nested_multigeometry.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/nested_multigeometry.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/draw_order_ground_overlay.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/draw_order_ground_overlay.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/unknwown_folder.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/unknwown_folder.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/document_nest.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/document_nest.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/visibility_ground_overlay.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/visibility_ground_overlay.kml"
+    },
+    {
+        "merged": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/res/merged/debug/raw/nested_folders.kml",
+        "source": "/Users/robertpop/Public/NowWhat/android/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4/res/raw/nested_folders.kml"
+    }
+]

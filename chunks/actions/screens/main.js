@@ -12,6 +12,7 @@ import { Data } from 'react-chunky'
 
 import { Button } from 'react-native-elements'
 
+import { isIOS } from '../../utils'
 import { TextToSpeech, SpeechToText } from 'react-native-watson'
 
 
@@ -26,8 +27,10 @@ export default class MainActionsScreen extends Screen {
 
 	componentDidMount() {
 		super.componentDidMount()
-		TextToSpeech.initialize('472574a2-75cf-42ac-a43e-ef73f95ffff7', 'aUtumEFkENdd')
-		SpeechToText.initialize('5d43b47a-92cd-49dd-854b-59b9d1ccdcc6', '5WswxXxdpJcu')
+		if (isIOS()) {
+			TextToSpeech.initialize('472574a2-75cf-42ac-a43e-ef73f95ffff7', 'aUtumEFkENdd')
+			SpeechToText.initialize('5d43b47a-92cd-49dd-854b-59b9d1ccdcc6', '5WswxXxdpJcu')
+		}
 	}
 
 	componentWillUnmount() {

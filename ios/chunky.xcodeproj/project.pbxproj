@@ -122,6 +122,7 @@
 		BED505A098E6443DB03674B9 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A6DED373FB34B26A396A010 /* Entypo.ttf */; };
 		CDE1044076FC4E86B444FEB4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A54348EE59FF4D7983054BD1 /* FontAwesome.ttf */; };
 		DE9457A40B9447EF84B340FC /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A2270B8195F4715AC92585F /* EvilIcons.ttf */; };
+		F56FC2B4FDF142739103F552 /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91826BBB40449B84B6C75C /* libTextToSpeech.a */; };
 		FB5EC07C441149AD9E13266B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 459A1223955F45469B44666A /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
@@ -385,6 +386,13 @@
 			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
 			remoteInfo = AirMaps;
 		};
+		5D85DF8521484D9E00910B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BD98AE87814753BFC54838 /* TextToSpeech.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A6FB2081D99E12200593599;
+			remoteInfo = TextToSpeech;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -457,6 +465,7 @@
 		00E356EE1AD99517003FC87E /* chunkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chunkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* chunkyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chunkyTests.m; sourceTree = "<group>"; };
+		0D91826BBB40449B84B6C75C /* libTextToSpeech.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTextToSpeech.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* chunky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chunky.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,6 +522,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6262551871A941839285DE91 /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
 		66967E0E174247A682EE7CA4 /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
+		69BD98AE87814753BFC54838 /* TextToSpeech.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = TextToSpeech.xcodeproj; path = "../node_modules/react-native-tts/ios/TextToSpeech.xcodeproj"; sourceTree = "<group>"; };
 		6D3C2DD9AB8E4B9098AE2A0E /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
 		744714262FEFA855F6D611D9 /* Pods-chunkyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chunkyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chunkyTests/Pods-chunkyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7743E09310CB41EAB8972174 /* libRNGoogleGeometry.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleGeometry.a; sourceTree = "<group>"; };
@@ -616,6 +626,7 @@
 				5D269171205FEA8400393105 /* PersonalityInsightsV2.framework in Frameworks */,
 				46727EFDED0940E68E0732BE /* libRCTYouTube.a in Frameworks */,
 				7F839CFF1D3D4E4C94159658 /* libAirMaps.a in Frameworks */,
+				F56FC2B4FDF142739103F552 /* libTextToSpeech.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +877,7 @@
 				163BEE11FEC3419A908C3C3F /* libRCTYouTube.a */,
 				7743E09310CB41EAB8972174 /* libRNGoogleGeometry.a */,
 				809FD2A5BF004E1D823EC790 /* libAirMaps.a */,
+				0D91826BBB40449B84B6C75C /* libTextToSpeech.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -882,6 +894,14 @@
 			isa = PBXGroup;
 			children = (
 				5D85DF2C2141A03B00910B5F /* libAirMaps.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D85DF8221484D9C00910B5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D85DF8621484D9E00910B5F /* libTextToSpeech.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -930,6 +950,7 @@
 				DA9A0410D18B428592F401E5 /* RCTYouTube.xcodeproj */,
 				397732AF51A34426A15F673E /* RNGoogleGeometry.xcodeproj */,
 				FBC2030109254F7CA1D649EE /* AirMaps.xcodeproj */,
+				69BD98AE87814753BFC54838 /* TextToSpeech.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1234,6 +1255,10 @@
 					ProductGroup = 2203C25B1EDF085700E8942E /* Products */;
 					ProjectRef = C19207A0F5ED4BC2AD93E5C2 /* RNVectorIcons.xcodeproj */;
 				},
+				{
+					ProductGroup = 5D85DF8221484D9C00910B5F /* Products */;
+					ProjectRef = 69BD98AE87814753BFC54838 /* TextToSpeech.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1489,6 +1514,13 @@
 			fileType = archive.ar;
 			path = libAirMaps.a;
 			remoteRef = 5D85DF2B2141A03B00910B5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5D85DF8621484D9E00910B5F /* libTextToSpeech.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTextToSpeech.a;
+			remoteRef = 5D85DF8521484D9E00910B5F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
@@ -1784,12 +1816,14 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = chunkyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1820,12 +1854,14 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = chunkyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1869,6 +1905,7 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = chunky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -1921,6 +1958,7 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = chunky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -1965,11 +2003,13 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "chunky-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2008,11 +2048,13 @@
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-google-geometry/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "chunky-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2043,6 +2085,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.chunky-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2067,6 +2110,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.chunky-tvOSTests";

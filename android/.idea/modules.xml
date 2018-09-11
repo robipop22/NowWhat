@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chunky.iml" filepath="$PROJECT_DIR$/chunky.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-audio-streaming/android/react-native-audio-streaming.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-audio-streaming/android/react-native-audio-streaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-blur/android/react-native-blur.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-blur/android/react-native-blur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-firebase/android/react-native-firebase.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-firebase/android/react-native-firebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fs/android/react-native-fs.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fs/android/react-native-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-geo-fencing/android/react-native-geo-fencing.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-geo-fencing/android/react-native-geo-fencing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-geocoder/android/react-native-geocoder.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-geocoder/android/react-native-geocoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-picker/android/react-native-image-picker.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-picker/android/react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-resizer/android/react-native-image-resizer.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-resizer/android/react-native-image-resizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-maps/lib/android/react-native-maps.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-maps/lib/android/react-native-maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-sound/android/react-native-sound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-tts/android/react-native-tts.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-tts/android/react-native-tts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-youtube/android/react-native-youtube.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-youtube/android/react-native-youtube.iml" />
+    </modules>
+  </component>
+</project>

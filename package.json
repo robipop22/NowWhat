@@ -23,6 +23,7 @@
     "react-native-geo-fencing": "^0.1.0",
     "react-native-google-geometry": "0.0.2",
     "react-native-maps-directions": "^1.4.0",
+    "react-native-tts": "^2.0.0",
     "react-native-watson": "^1.6.2"
   },
   "devDependencies": {

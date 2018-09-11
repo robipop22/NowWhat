@@ -3,10 +3,11 @@ package com.nowwhat.android;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import net.no_mad.tts.TextToSpeechPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.surialabs.rn.geofencing.GeoFencingPackage;
 // import com.varenslab.google.geometry.RNGoogleGeometryPackage;
-import com.reactlibrary.RNBluemixPackage;
+// import com.reactlibrary.RNBluemixPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.rnfs.RNFSPackage;
 import fr.bamlab.rnimageresizer.ImageResizerPackage;
@@ -38,10 +39,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new TextToSpeechPackage(),
             new MapsPackage(),
             new GeoFencingPackage(),
             // new RNGoogleGeometryPackage(),
-            new RNBluemixPackage(),
+            // new RNBluemixPackage(),
             new ReactNativeYouTube(),
             new RNFSPackage(),
             new ImageResizerPackage(),

@@ -88,13 +88,13 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.nowwhat.android"
-        minSdkVersion 26
-        targetSdkVersion 26
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 2
         versionName "1.0"
         ndk {
@@ -144,10 +144,11 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-tts')
     compile project(':react-native-maps')
     compile project(':react-native-geo-fencing')
     // compile project(':react-native-google-geometry')
-    compile project(':react-native-watson')
+    // compile project(':react-native-watson')
     compile project(':react-native-youtube')
     compile project(':react-native-fs')
     compile project(':react-native-image-resizer')
@@ -157,7 +158,7 @@ dependencies {
     compile project(':react-native-blur')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:26.0.1"
+    compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile project(':react-native-firebase')
     compile project(':react-native-geocoder')

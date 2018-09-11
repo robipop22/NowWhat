@@ -93,7 +93,7 @@ export default class AddLocationScreen extends Screen {
 	addNewLocation = () => {
 		const data = markers[0]
 		data.latlng = { latitude: this.state.markerLatitude, longitude: this.state.markerLongitude}
-		data.picture = 'http://teamorange.in/wp-content/uploads/2017/01/event-management-blog-1-performance.jpg'
+		data.picture = 'https://image.freepik.com/free-icon/location-mark_318-40739.jpg'
 		const placesRef = firebase.database().ref().child('places')
 		placesRef.push(data)
 		.then( (data) => {
